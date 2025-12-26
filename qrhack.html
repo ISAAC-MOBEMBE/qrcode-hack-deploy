@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>System Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* ===== DANGER SIMULÉ ===== */
+    #simulation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      font-family: monospace;
+      color: red;
+    }
+
+    #sim-text {
+      font-size: 1.2rem;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    #sim-text.show {
+      opacity: 1;
+    }
+
+    /* ===== PAGE PÉDAGOGIQUE ===== */
+    #education {
+      display: none;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header i {
+      font-size: 42px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 10px 0;
+    }
+
+    .section {
+      margin-bottom: 32px;
+      padding: 20px;
+      background: #111;
+      border-radius: 8px;
+      border-left: 4px solid green;
+    }
+
+    .section h2 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+    }
+
+    .section p,
+    li {
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .warning {
+      font-size: 0.75rem;
+      color: red;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .brand {
+      color: #00ff99;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== ÉTAPE 1 : DANGER SIMULÉ ===== -->
+<div id="simulation">
+  <p id="sim-text">Connexion externe détectée…</p>
+</div>
+
+<!-- ===== ÉTAPE 2 : PAGE PÉDAGOGIQUE ===== -->
+<div id="education">
+  <div class="container">
+
+    <div class="header">
+      <i class="fa-solid fa-qrcode"></i>
+      <h1>Tu viens de scanner un QR code</h1>
+      <p>Sans savoir exactement ce qu’il allait faire.</p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-triangle-exclamation"></i> Ce qui vient de se passer</h2>
+      <p>Ton téléphone n’est pas en panne.</p>
+      <p>
+        Ce que tu as vu était une simulation volontairement troublante.
+        Dans la réalité, ce genre de messages accompagne souvent des attaques.
+      </p>
+      <div class="warning">
+        <i class="fa-solid fa-circle-info"></i>
+        Simulation éducative – aucune de tes données n’a été collectée.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-bug"></i> Ce qu’un QR malveillant peut réellement faire</h2>
+      <ul>
+        <li>Rediriger vers un faux site crédible</li>
+        <li>Lancer des scripts invisibles</li>
+        <li>Voler mots de passe et données</li>
+        <li>Installer un espion logiciel</li>
+      </ul>
+      <div class="warning">
+        <i class="fa-solid fa-eye-slash"></i>
+        Le danger est invisible avant le scan.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-street-view"></i> Où se cache le piège</h2>
+      <p>
+        Affiches, menus, panneaux, murs, autocollants.
+        Le QR peut être partout.
+      </p>
+      <p>
+        Il suffit d’un instant d’inattention.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fa-solid fa-brain"></i> La vraie leçon</h2>
+      <p>
+        La technologie ne prévient pas.
+      </p>
+      <p>
+        Elle agit.
+      </p>
+      <p>
+        Aujourd’hui, c’était une simulation.
+        La prochaine fois, ce sera peut-être réel.
+        
+        Suivez la chaine AU-DELA DES LIMITES POUR BENEFICIER D'UN TAS D'AUTRES CHOSE
+      </p>
+    </div>
+  </div>
+</div>
+<!-- ===== SECTION APPEL À L'ACTION ANIMÉE ===== -->
+<div class="section" style="text-align:center; background:#222; border-left:4px solid #00ff99;">
+  <h2><i class="fa-solid fa-bolt"></i> Ne reste pas en marge !</h2>
+  <p>
+    Pour recevoir plus de simulations, astuces et conseils exclusifs, rejoins notre chaîne WhatsApp en cliquant sur le bouton
+  </p>
+  <a href="https://whatsapp.com/channel/0029VbBK4N5Fcow0IBTyyo1t" target="_blank" class="cta-button">
+    Suivre <span class="brand">Au-delà des limites</span>
+  </a><br>
+  <p class="warning"> 
+    <i class="fa-solid fa-circle-info"></i> Gratuit et sans spam – juste du contenu pour t’informer et te protéger
+  </p>
+</div>
+
+<style>
+  .cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: blue;
+    background: blue;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 0 15px green;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    animation: pulse 1.5s infinite;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px blue;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 10px #00ff99aa;
+    }
+    50% {
+      box-shadow: 0 0 25px #00ff99ff;
+    }
+    100% {
+      box-shadow: 0 0 10px #00ff99aa;
+    }
+  }
+</style>
+<script>
+  const messages = [
+    "⚠️ SYSTEM OVERRIDE",
+    "Connexion externe détectée…",
+    "Analyse du périphérique…",
+    "OS détecté : Android / iOS",
+    "Autorisation non vérifiée",
+    "⛔ PROCÉDURE D’ARRÊT INITIÉE",
+    "Ne quittez pas…",
+    "",
+    "STOP PROCES!"
+  ];
+
+  let index = 0;
+  const textEl = document.getElementById("sim-text");
+
+  function nextMessage() {
+    if (index < messages.length) {
+      textEl.classList.remove("show");
+      setTimeout(() => {
+        textEl.innerText = messages[index];
+        textEl.classList.add("show");
+        index++;
+      }, 400);
+    } else {
+      setTimeout(() => {
+        document.getElementById("simulation").style.display = "none";
+        document.getElementById("education").style.display = "block";
+      }, 1000);
+    }
+  }
+
+  setInterval(nextMessage, 1800);
+</script>
+<div class="footer">
+      ✍️ <span class="brand">Au-delà des limites</span> ♂️  
+      <br>Appredre · Innover  · Impacter
+    </div>
+</body>
+</html>
